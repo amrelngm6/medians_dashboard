@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth group">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>Index | Medians - Admin &amp; Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="Minimal Admin &amp; Dashboard Template" name="description">
+    <meta content="Medians" name="author">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Template_files/aos.css">
+    <link rel="stylesheet" href="./Template_files/tailwind2.css">
+</head>
+
+<body class="text-base text-body font-public">
+
+    <nav class="fixed inset-x-0 top-0 z-50 flex items-center justify-center h-20 py-3 group [&amp;.is-sticky]:bg-white dark:[&amp;.is-sticky]:bg-zink-700 [&amp;.is-sticky]:shadow-lg [&amp;.is-sticky]:shadow-slate-200/25 dark:[&amp;.is-sticky]:shadow-zink-500/30 navbar transition-all"
+        id="navbar">
+        <div class="container 2xl:max-w-[87.5rem] px-4 mx-auto flex items-center self-center w-full">
+            <div class="shrink-0">
+                <a href="/index.html#!" class="flex items-center gap-2">
+                    <img src="./Template_files/logo.png" alt="" class="block h-8 dark:hidden">
+                    <img src="./Template_files/logo-light.png" alt="" class="hidden h-8 dark:block">
+                    <div>
+                        <span
+                            class="px-2 py-1 text-sm font-semibold group-[.is-sticky]:bg-slate-100 bg-white rounded-full text-slate-500">v1.2.0</span>
+                    </div>
+                </a>
+            </div>
+            <div class="ml-auto">
+                <ul id="navbar7"
+                    class="absolute inset-x-0 z-20 items-center hidden py-3 bg-white shadow-lg dark:bg-zink-600 dark:md:bg-transparent md:z-0 navbar-menu rounded-b-md md:shadow-none md:flex top-full ltr:ml-auto rtl:mr-auto md:relative md:bg-transparent md:rounded-none md:top-auto md:py-0">
+                    <li>
+                        <a href="/index.html"
+                            class="block md:inline-block px-4 md:px-3 py-2.5 md:py-0.5 text-16 font-medium text-slate-800 transition-all duration-300 ease-linear hover:text-blue-500 [&amp;.active]:text-blue-500 dark:text-zink-100 dark:hover:text-blue-500 dark:[&amp;.active]:text-blue-500 active">Demos</a>
+                    </li>
+                    <li>
+                        <a href="/index.html"
+                            class="block md:inline-block px-4 md:px-3 py-2.5 md:py-0.5 text-16 font-medium text-slate-800 transition-all duration-300 ease-linear hover:text-blue-500 [&amp;.active]:text-blue-500 dark:text-zink-100 dark:hover:text-blue-500 dark:[&amp;.active]:text-blue-500">Features</a>
+                    </li>
+                    <li>
+                        <a href="/docs/html/index.html" target="_blank"
+                            class="block md:inline-block px-4 md:px-3 py-2.5 md:py-0.5 text-16 font-medium text-slate-800 transition-all duration-300 ease-linear hover:text-blue-500 [&amp;.active]:text-blue-500 dark:text-zink-100 dark:hover:text-blue-500 dark:[&amp;.active]:text-blue-500">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="/changelog.html"
+                            class="block md:inline-block px-4 md:px-3 py-2.5 md:py-0.5 text-16 font-medium text-slate-800 transition-all duration-300 ease-linear hover:text-blue-500 [&amp;.active]:text-blue-500 dark:text-zink-100 dark:hover:text-blue-500 dark:[&amp;.active]:text-blue-500">Changelog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex gap-2 ml-4">
+                <div class="ltr:ml-auto rtl:mr-auto md:hidden navbar-toggale-button">
+                    <button type="button"
+                        class="flex items-center  justify-center w-[37.5px] h-[37.5px] p-0 text-white btn bg-blue-500 border-blue-500 hover:text-white hover:bg-blue-600 hover:border-blue-600 focus:text-white focus:bg-blue-600 focus:border-blue-600 focus:ring focus:ring-blue-100 active:text-white active:bg-blue-600 active:border-blue-600 active:ring active:ring-blue-100 dark:ring-blue-400/20"><i
+                            data-lucide="menu"></i></button>
+                </div>
+                <!-- <button type="button" class="flex items-center justify-center w-[37.5px] h-[37.5px] transition-all duration-200 ease-linear p-0 text-purple-500 bg-white btn hover:text-purple-600 focus:text-purple-600 active:text-purple-600"><i data-lucide="github" class="w-5 h-5"></i></button> -->
+            </div>
+        </div>
+    </nav>
+    <div
+        class="relative min-h-screen pb-20 overflow-hidden bg-no-repeat pt-44 bg-gradient-to-bl from-indigo-50 via-purple-50 to-blue-50">
+        <div class="absolute top-0 left-0 right-0 opacity-70">
+            <img src="./Template_files/bg-head.jpg" alt="">
+        </div>
+        <div class="absolute top-0 left-0 w-64 h-64 bg-blue-500 opacity-10 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-64 h-64 bg-gray-900 opacity-10 blur-3xl"></div>
+        <div class="container 2xl:max-w-[87.5rem] relative">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12 text-center lg:col-span-8 lg:col-start-3 2xl:col-start-4 2xl:col-span-6">
+                    <h1 class="mb-2 text-4xl leading-normal"><span class="header fw-bold ">Medians Dashboard</span>
+                        <br /> Multipurpose Admin &amp; Dashboard Template</h1>
+                    <p class="md:mx-16 text-slate-500 text-16">Professional, High Quality, Modern, light, developer
+                        friendly, Highly customizable CSS / JS </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-3 mt-8">
+                <a href="#demos"
+                    class="text-white bg-gray-900 border-blue-500 btn text-lg py-2.5 px-6 text-15 hover:text-blue-500 hover:bg-blue-600 hover:border-blue-600 ">
+                    <span class="align-middle">Demos</span></a>
+            </div>
+
+
+            <h6 class="mt-32 mb-3 text-center underline">Basic Features</h6>
+            <div class="flex flex-wrap justify-around gap-4">
+                <p class="text-slate-500"><i data-lucide="flower" class="inline-block w-4 h-4 mb-1 mr-1"></i> <span
+                        class="align-middle">Built with Bootstrap</span></p>
+                <p class="text-slate-500"><i data-lucide="flower" class="inline-block w-4 h-4 mb-1 mr-1"></i> <span
+                        class="align-middle">Light Theme with RTL Supported</span></p>
+                <p class="text-slate-500"><i data-lucide="flower" class="inline-block w-4 h-4 mb-1 mr-1"></i> <span
+                        class="align-middle">Easy to Customize</span></p>
+                <p class="text-slate-500"><i data-lucide="flower" class="inline-block w-4 h-4 mb-1 mr-1"></i> <span
+                        class="align-middle">Multiple Layouts</span></p>
+                <p class="text-slate-500"><i data-lucide="flower" class="inline-block w-4 h-4 mb-1 mr-1"></i> <span
+                        class="align-middle">Pre-made APPs</span></p>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="py-20" id="demos">
+        <div class="container 2xl:max-w-[87.5rem] relative">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12 mb-8 text-center lg:col-start-4 lg:col-span-6">
+                    <h2 class="capitalize" data-aos="zoom-in">Master layout options</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/analytics.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/index.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/index.html">Default Layouts</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/saas.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/horizontal-layout.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/horizontal-layout.html">Horizontal Layouts</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/crm.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/bordered-layout.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/bordered-layout.html">Bordered Layouts</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/sales.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/index.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/index.html">Borderless Layouts</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/ecommerce.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/semi-dark-layout.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/semi-dark-layout.html">Semi Dark (Sidebar &amp; Header)</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/profile-setting.png" alt=""
+                            class="rounded-md shadow-lg shadow-slate-200" data-aos="">
+                        <a target="_blank" href="/html-dark/index.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/index.html">Dark Mode</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <a target="_blank" href="/html-rtl/index.html" class="relative inline-block p-2">
+                        <img src="./Template_files/referal.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                    </a>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-rtl/index.html">RTL Mode</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/overview.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/compact-layout.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/compact-layout.html">Compact Sidebar</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/calendar.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/small-layout.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/small-layout.html">Small (Icon) Sidebar</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/products.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html/onepage-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html/onepage-landing.html">Corporate OnePage</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/edit_product.png" alt=""
+                            class="rounded-md shadow-lg shadow-slate-200" data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/attendance.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/employees.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/projects.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/project.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/pos.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/file-manager.png" alt=""
+                            class="rounded-md shadow-lg shadow-slate-200" data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/chat.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/inbox.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/read-mail.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+                <div class="text-center group/item">
+                    <div class="relative p-2">
+                        <img src="./Template_files/todo.png" alt="" class="rounded-md shadow-lg shadow-slate-200"
+                            data-aos="">
+                        <a target="_blank" href="/html-dark/product-landing.html"
+                            class="absolute inline-block px-4 py-1.5 text-sm text-white bg-gray-900 rounded-md bottom-0 group-hover/item:bottom-4 left-4 opacity-0 group-hover/item:opacity-100 transition-all ease-linear duration-200">View</a>
+                    </div>
+                    <h6 class="mt-3 text-16" data-aos="zoom-in" data-aos-duration="100"><a target="_blank"
+                            href="/html-dark/product-landing.html">Single Product Landing Page</a></h6>
+                </div>
+            </div><!--end grid-->
+        </div>
+    </section>
+    <section class="py-20" id="features">
+        <div class="container 2xl:max-w-[87.5rem] relative">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12 mb-10 text-center lg:col-start-4 lg:col-span-6">
+                    <h2 class="capitalize" data-aos="zoom-in">HTML Technical Features</h2>
+                </div>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/javascript.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Pure JavaScript</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/left-right.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>LTR &amp; RTL Layouts</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/light-dark.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Light Layouts</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/space-craft.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Starter Kit</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/context.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Full Documentation</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Multiple Layouts</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/customize.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Easy Customization</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Fully Responsive</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Regular &amp; Free Updates</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/apexcharts.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Multiple Charts</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAsBJREFUeAHtW8FqFEEQrers4sUf2ERBEN2D0at39TM8GKN7j4fsQRKJEDAezH2TGEE/Q/yImCAhEQSTzSeIZnfK6tnFTWanxhoh0lPbDQPdVW9m672q7ukdZhC4Ndq7TwFogbtNIHLeZrYhJsxtHwDXT9ZmNzAlT0nHLOEiYuhaDoGeFWFs+2jBEcBN2yQL2TWd+TlfxJ/XO9sLXhH5oS8KoBDJNCRWgOn0KsjFClCIZBoSK8B0ehXkYgUoRDINqYnsEHoO3ArQpXfHr28cibjAHTOLB1cAfswlCMtAMMYXG4s7/IdwvCHCi+7anZfjnmpapts7y0Swko1eXgNquJ0FV3os8BEF6K7e/l5pwpngJT6iAJnzzQ6jAGZTqyQWK0AplFlYrACzqVUSixWgFMosLFaA2dQqicUKUAplFhYrwGxqlcRiBSiFMguLFWA2tUpiY4+Jlef9VxgR4fzX/hNIaJ5fb7s1+HHaA4dbW9enNhEx98m2Jsjgp0DrGzUeH/Y/UkIdZnmXgC4PDu6zzfs8RkM2DxO0AD7zp6f9D/wi17284FMb+3q/+u89VsQUOIIWIC37IvJDYlwR91NsAVHJFbQAgzkvhZ6xp+tDxqYYhi3AnwVPwaQUdnS9wAUYBXpRvcAF4FudupXBji4atgB8nx+F+pdeGeyZSwUtgN/kAOKnM/HmdxmTYvO9hdagBfA7vHp96mGhCEzeY/51Nxj8VrhzDU94k/PgorbCwQvg63eY3Q3u+uNce3tuVH4Q9BQoT6f8GVGA8prZOiNWgJTP6eefr0q+KtolPnIF9GiuikTFmAU+4m2Qn74szbR3E6zVt49Wm8fihQN3pG+K4s9HCSRLeaGKb4rmgS3aHO8y/Le0k9mYu18D+EPiiW37LACuTyp93mK/cf4TcuCvqHkqfJmI6eCnfMrVtbqvZjd/Ayj3u2zl1YldAAAAAElFTkSuQmCC"
+                        alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Full Calender</h6>
+                    </div>
+                </div>
+                <div class="px-5 py-8 text-center transition duration-200 ease-linear border rounded-md shadow-lg shadow-slate-100 hover:-translate-y-1"
+                    data-aos="">
+                    <img src="./Template_files/datatables.png" alt="" class="mx-auto h-9">
+                    <div class="mt-5">
+                        <h6>Data Tables (JQuery)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container 2xl:max-w-[87.5rem] relative mt-10">
+        <div class="grid grid-cols-12 gap-5">
+            <div class="col-span-12 lg:col-span-8 lg:col-start-3">
+                <div class="relative px-5 py-8 text-center rounded-md bg-gray-900">
+                    <h4 class="mb-3 text-white">How about a customized project?</h4>
+                    <p class="mb-5 text-white/75 2xl:mx-20">Since 20111, we've assisted startups, blue-chip companies,
+                        and government agencies, delivering over 60 successful custom projects.</p>
+                    <a href="#!"
+                        class="px-6 fw-bold bg-yellow-100 border-blue-600 btn text-15 hover:text-white hover:bg-blue-700 hover:border-blue-700 focus:text-white focus:bg-blue-700 focus:border-blue-700 active:text-white active:bg-blue-700 active:border-blue-700"><span
+                            class="align-middle">Hire Me</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-32 text-center pb-7 bg-slate-100">
+        <div class="container 2xl:max-w-[87.5rem] relative">
+            <p>
+                <script>document.write(new Date().getFullYear())</script>2024 © Medians. Design &amp; Develop by <a
+                    href="https://themesdesign.in/" target="_blank" class="underline text-slate-500">Medians</a>
+            </p>
+        </div>
+    </footer>
+    <script src="./Template_files/popper.min.js"></script>
+    <script src="./Template_files/simplebar.min.js"></script>
+    <script src="./Template_files/swiper-bundle.min.js"></script>
+</body>
+
+</html>
