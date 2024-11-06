@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        * @Package:  Medians Dashboard
+        * @Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medians Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144-precomposed.png">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <link href="/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class=" ">
+    <!-- START TOPBAR -->
+    <div id="load-header" class="load_html_file" data-path="/ltr/includes/topbar.html"></div>
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+        <div id="load-sidebar" class="load_html_file" data-path="/ltr/includes/sidebar.html"></div>
+        <!--  SIDEBAR - END -->
+
+        <!-- START CONTENT -->
+        <section id="main-content" class=" overflow-x-hidden">
+            <div class="wrapper main-wrapper row" style=''>
+
+                <div class='col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title">Employees </h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/index.html"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">HR</a>
+                                </li>
+                                <li class="active">
+                                    <strong>Employees</strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-lg-12 ">
+
+                </div>
+                    
+                <div class="clearfix"></div>
+
+                <div class="col-lg-12">
+                    
+                    <div class="card">
+                        <div class="card-header align-items-center  gap-2 gap-md-5 w-full flex">
+                            <div class="card-title">
+                                <div class="d-flex align-items-center position-relative my-1">
+                                    <input type="date" class="datepicker form-control form-control-solid py-1 w-200px" />
+                                </div>
+                            </div>
+                            
+                            <a class="btn btn-md btn-primary me-2 open-modal" data-modal="#new-user-modal" href="javascript:;">
+                                New Employee </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card ">
+                            <div class="card-body p-0">
+                                <div class="flex  items-center border-b border-slate-200/60 p-5 dark:border-darkmode-400 gap-4">
+                                    <div class="w-auto">
+                                        <img class="rounded-circle w-50px h-50px" src="/data/profile/avatar-1.png" alt="">
+                                    </div>
+                                    <div class="mt-3 text-start user-info">
+                                        <a class="font-medium user" href="">
+                                            Adam Smith
+                                        </a>
+                                        <div class=" text-xs text-slate-500">
+                                            Full-stack Engineer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center justify-center p-5 lg:flex-nowrap">
+                                    <div class="mb-4 mr-auto w-full lg:mb-0 lg:w-1/2">
+                                        <div class="flex text-xs text-slate-500">
+                                            <div class="w-full">Attendance</div>
+                                            <div>84%</div>
+                                        </div>
+                                        <div class="w-full bg-dark-subtle rounded  mt-2 h-1">
+                                            <div role="progressbar" style="width: 84%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="bg-primary h-full rounded text-xs text-white flex justify-center items-center w-1/4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" data-name="Adam Smith" data-img="/data/profile/avatar-1.png" data-user-id="1" class="msg-user transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary mr-2 px-2 py-1">Message</a>
+                                    
+                                    <a href="/ltr/profile/overview.html" class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&amp;:hover:not(:disabled)]:bg-secondary/20 [&amp;:hover:not(:disabled)]:dark:bg-darkmode-100/10 px-2 py-1">Profile</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="flex  items-center border-b border-slate-200/60 p-5 dark:border-darkmode-400 gap-4">
+                                    <div class="">
+                                        <img class="rounded-circle w-50px h-50px" src="/data/profile/avatar-2.png" alt="">
+                                    </div>
+                                    <div class="mt-3 text-start ">
+                                        <a class="font-medium" href="">
+                                            Jhon Doe
+                                        </a>
+                                        <div class=" text-xs text-slate-500">
+                                            Front-end Engineer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center justify-center p-5 lg:flex-nowrap">
+                                    <div class="mb-4 mr-auto w-full lg:mb-0 lg:w-1/2">
+                                        <div class="flex text-xs text-slate-500">
+                                            <div class="w-full">Attendance</div>
+                                            <div>90%</div>
+                                        </div>
+                                        <div class="w-full bg-dark-subtle rounded  mt-2 h-1">
+                                            <div role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="bg-primary h-full rounded text-xs text-white flex justify-center items-center w-1/4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" data-name="Adam Smith" data-img="/data/profile/avatar-2.png" data-user-id="2" class="msg-user transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary mr-2 px-2 py-1">Message</a>
+                                    <a href="/ltr/profile/overview.html" class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&amp;:hover:not(:disabled)]:bg-secondary/20 [&amp;:hover:not(:disabled)]:dark:bg-darkmode-100/10 px-2 py-1">Profile</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="flex  items-center border-b border-slate-200/60 p-5 dark:border-darkmode-400 gap-4">
+                                    <div class="">
+                                        <img class="rounded-circle w-50px h-50px" src="/data/profile/avatar-3.png" alt="">
+                                    </div>
+                                    <div class="mt-3 text-start ">
+                                        <a class="font-medium" href="">
+                                            Hany Maged
+                                        </a>
+                                        <div class=" text-xs text-slate-500">
+                                            Quality Tester
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center justify-center p-5 lg:flex-nowrap">
+                                    <div class="mb-4 mr-auto w-full lg:mb-0 lg:w-1/2">
+                                        <div class="flex text-xs text-slate-500">
+                                            <div class="w-full">Attendance</div>
+                                            <div>65%</div>
+                                        </div>
+                                        <div class="w-full bg-dark-subtle rounded  mt-2 h-1">
+                                            <div role="progressbar" style="width: 65%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="bg-primary h-full rounded text-xs text-white flex justify-center items-center w-1/4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" data-name="Adam Smith" data-img="/data/profile/avatar-3.png" data-user-id="3" class="msg-user transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary mr-2 px-2 py-1">Message</a>
+                                    <a href="/ltr/profile/overview.html" class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&amp;:hover:not(:disabled)]:bg-secondary/20 [&amp;:hover:not(:disabled)]:dark:bg-darkmode-100/10 px-2 py-1">Profile</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="flex  items-center border-b border-slate-200/60 p-5 dark:border-darkmode-400 gap-4">
+                                    <div class="">
+                                        <img class="rounded-circle w-50px h-50px" src="/data/profile/avatar-5.png" alt="">
+                                    </div>
+                                    <div class="mt-3 text-start ">
+                                        <a class="font-medium" href="">
+                                            Hoda Kamal
+                                        </a>
+                                        <div class=" text-xs text-slate-500">
+                                            Graphic Designer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center justify-center p-5 lg:flex-nowrap">
+                                    <div class="mb-4 mr-auto w-full lg:mb-0 lg:w-1/2">
+                                        <div class="flex text-xs text-slate-500">
+                                            <div class="w-full">Attendance</div>
+                                            <div>80%</div>
+                                        </div>
+                                        <div class="w-full bg-dark-subtle rounded  mt-2 h-1">
+                                            <div role="progressbar" style="width: 80%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="bg-primary h-full rounded text-xs text-white flex justify-center items-center w-1/4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" data-name="Adam Smith" data-img="/data/profile/avatar-5.png" data-user-id="4" class="msg-user transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary mr-2 px-2 py-1">Message</a>
+                                    <a href="/ltr/profile/overview.html" class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&amp;:hover:not(:disabled)]:bg-secondary/20 [&amp;:hover:not(:disabled)]:dark:bg-darkmode-100/10 px-2 py-1">Profile</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="flex  items-center border-b border-slate-200/60 p-5 dark:border-darkmode-400 gap-4">
+                                    <div class="">
+                                        <img class="rounded-circle w-50px h-50px" src="/data/profile/avatar-4.png" alt="">
+                                    </div>
+                                    <div class="mt-3 text-start ">
+                                        <a class="font-medium" href="">
+                                            Smith Karl 
+                                        </a>
+                                        <div class=" text-xs text-slate-500">
+                                            Full-stack Engineer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center justify-center p-5 lg:flex-nowrap">
+                                    <div class="mb-4 mr-auto w-full lg:mb-0 lg:w-1/2">
+                                        <div class="flex text-xs text-slate-500">
+                                            <div class="w-full">Attendance</div>
+                                            <div>84%</div>
+                                        </div>
+                                        <div class="w-full bg-dark-subtle rounded  mt-2 h-1">
+                                            <div role="progressbar" style="width: 84%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="bg-primary h-full rounded text-xs text-white flex justify-center items-center w-1/4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" data-name="Adam Smith" data-img="/data/profile/avatar-1.png" data-user-id="5" class="msg-user transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary mr-2 px-2 py-1">Message</a>
+                                    
+                                    <a href="/ltr/profile/overview.html" class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&amp;:hover:not(:disabled)]:bg-secondary/20 [&amp;:hover:not(:disabled)]:dark:bg-darkmode-100/10 px-2 py-1">Profile</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xxl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="flex  items-center border-b border-slate-200/60 p-5 dark:border-darkmode-400 gap-4">
+                                    <div class="">
+                                        <img class="rounded-circle w-50px h-50px" src="/data/profile/avatar-1.png" alt="">
+                                    </div>
+                                    <div class="mt-3 text-start ">
+                                        <a class="font-medium" href="">
+                                            Kenedy AdaM 
+                                        </a>
+                                        <div class=" text-xs text-slate-500">
+                                            Full-stack Engineer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap items-center justify-center p-5 lg:flex-nowrap">
+                                    <div class="mb-4 mr-auto w-full lg:mb-0 lg:w-1/2">
+                                        <div class="flex text-xs text-slate-500">
+                                            <div class="w-full">Attendance</div>
+                                            <div>84%</div>
+                                        </div>
+                                        <div class="w-full bg-dark-subtle rounded  mt-2 h-1">
+                                            <div role="progressbar" style="width: 84%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" class="bg-primary h-full rounded text-xs text-white flex justify-center items-center w-1/4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:;" data-name="Adam Smith" data-img="/data/profile/avatar-1.png" data-user-id="6" class="msg-user transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary mr-2 px-2 py-1">Message</a>
+                                    <a href="/ltr/profile/overview.html" class="transition duration-200 border shadow-sm inline-flex items-center justify-center rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&amp;:hover:not(:disabled)]:bg-opacity-90 [&amp;:hover:not(:disabled)]:border-opacity-90 [&amp;:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed border-secondary text-slate-500 dark:border-darkmode-100/40 dark:text-slate-300 [&amp;:hover:not(:disabled)]:bg-secondary/20 [&amp;:hover:not(:disabled)]:dark:bg-darkmode-100/10 px-2 py-1">Profile</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi hideit">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="form-control py-2">
+                <i class='cursor-pointer bx bx-message-square-x fs-1 mt-4 mx-8 position-absolute right-0 toggle_chat top-25' ></i>
+            </div>
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chatapi-windows ">
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+
+    
+    <!--begin::Modal - New Target-->
+    <div id="load-modal" class="load_html_file" data-path="/ltr/includes/modals/new-user-modal.html"></div>
+    <!--end::Modal - New Target-->
+
+        
+
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/pace/pace.min.js"></script>
+    <script src="/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets/plugins/viewport/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <script src="/assets/plugins/calendar/moment.min.js"></script>
+    <script src="/assets/plugins/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="/assets/plugins/chartjs-chart/Chart.min.js"></script>
+    <script src="/assets/js/chart-chartjs.js"></script>
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="/assets/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+</html>

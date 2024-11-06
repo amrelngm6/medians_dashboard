@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        * @Package:  Medians Dashboard
+        * @Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medians Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144-precomposed.png">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <link href="/assets/plugins/calendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class=" ">
+    <!-- START TOPBAR -->
+    <div id="load-header" class="load_html_file" data-path="/ltr/includes/topbar.html"></div>
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+        <div id="load-sidebar" class="load_html_file" data-path="/ltr/includes/sidebar.html"></div>
+        <!--  SIDEBAR - END -->
+
+        <!-- START CONTENT -->
+        <section id="main-content" class=" overflow-hidden">
+            <div class="wrapper main-wrapper mb-20" style=''>
+
+                <div class='col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title">Day Events Calendar </h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/index.html"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Events</a>
+                                </li>
+                                <li class="active">
+                                    <strong>Day Calendar</strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-lg-2">
+
+                    <div class="pb-20 w-full ">
+
+                        <div class="w-full flex gap-20 relative">
+                            <div id="slider-container" class="w-32">
+
+                                <div class="position-absolute top-0 bottom-0 mt-100"
+                                    style=" max-width: 140px; display: grid;  transform: scale(.6);">
+
+                                    <!-- put all in a wrapper:-->
+                                    <div class="wrap" role="group" aria-label="slider with ruler"
+                                        style="display: grid; --min: 1; --val: 30; --max: 60">
+                                        <!-- slider:-->
+                                        <input id="r" type="range" list="l" step="1" min="0" max="60" />
+                                        <!-- value display:-->
+                                        <output for="r"></output>
+                                        <!-- ruler:-->
+                                        <datalist id="l">
+                                            <option value="5" style="--idx: 2"></option>
+                                            <option value="5" style="--idx: 4"></option>
+                                            <option value="6" style="--idx: 6" label="6"></option>
+
+                                            <option value="11" style="--idx: 8"></option>
+                                            <option value="11" style="--idx: 10"></option>
+                                            <option value="12" style="--idx: 12" label="12"></option>
+
+                                            <option value="17" style="--idx: 14"></option>
+                                            <option value="17" style="--idx: 16"></option>
+                                            <option value="18" style="--idx: 18" label="18"></option>
+
+                                            <option value="23" style="--idx: 20"></option>
+                                            <option value="23" style="--idx: 22"></option>
+                                            <option value="24" style="--idx: 24" label="24"></option>
+
+                                            <option value="29" style="--idx: 26"></option>
+                                            <option value="29" style="--idx: 28"></option>
+                                            <option value="30" style="--idx: 30" label="30"></option>
+
+                                            <option value="35" style="--idx: 32"></option>
+                                            <option value="35" style="--idx: 34"></option>
+                                            <option value="36" style="--idx: 36" label="36"></option>
+
+                                            <option value="41" style="--idx: 38"></option>
+                                            <option value="41" style="--idx: 40"></option>
+                                            <option value="42" style="--idx: 42" label="42"></option>
+
+                                            <option value="47" style="--idx: 44"></option>
+                                            <option value="47" style="--idx: 46"></option>
+                                            <option value="48" style="--idx: 48" label="48"></option>
+
+                                            <option value="53" style="--idx: 50"></option>
+                                            <option value="53" style="--idx: 52"></option>
+                                            <option value="54" style="--idx: 54" label="54"></option>
+
+                                            <option value="59" style="--idx: 56"></option>
+                                            <option value="59" style="--idx: 58"></option>
+                                            <option value="60" style="--idx: 60" label="60"></option>
+
+                                            <option value="22" style="--idx: 22"></option>
+
+                                        </datalist>
+                                    </div>
+                                    <section class="range-info">
+                                        <p class="box box--fail box--list"></p>
+                                        <p class="box box--warn box--trig"></p>
+                                        <p class="box box--fail box--cmix"></p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+
+                    <div class="w-full pt-10">
+                        <div class="w-full bg-white p-8 rounded-xl shadow-md dark:bg-gray-900 dark:text-gray-300"
+                            id='day-calendar' style="max-height:calc(100vh - 50px)"></div>
+                    </div>
+                    <!-- <div id="calendar"></div> -->
+                </div>
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi hideit">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="form-control py-2">
+                <i class='cursor-pointer bx bx-message-square-x fs-1 mt-4 mx-8 position-absolute right-0 toggle_chat top-25' ></i>
+            </div>
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chatapi-windows ">
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+
+    
+    <!--begin::Modal - New Target-->
+    <div id="load-modal" class="load_html_file" data-path="/ltr/includes/modals/calendar-modal.html"></div>
+    <!--end::Modal - New Target-->
+
+        
+
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/pace/pace.min.js"></script>
+    <script src="/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets/plugins/viewport/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <script src="/assets/plugins/calendar/moment.min.js"></script>
+    <script src="/assets/plugins/calendar/fullcalendar.min.js"></script>
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="/assets/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+</html>

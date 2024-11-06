@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- 
+        * @Package:  Medians Dashboard
+        * @Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medians Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144-precomposed.png">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <link href="/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/rtl.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="rtl ">
+    <!-- START TOPBAR -->
+    <div id="load-header" class="load_html_file" data-path="/rtl/includes/topbar.html"></div>
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+        <div id="load-sidebar" class="load_html_file" data-path="/rtl/includes/sidebar.html"></div>
+        <!--  SIDEBAR - END -->
+
+        <!-- START CONTENT -->
+        <section id="main-content" class=" overflow-x-hidden">
+            <div class="wrapper main-wrapper row" style=''>
+
+                <div class='col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title">Attendance table </h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/index.html"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">HR</a>
+                                </li>
+                                <li class="active">
+                                    <strong>Attendance</strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="col-lg-12 ">
+                </div>
+                    
+                <div class="col-lg-12 flex gap-10">
+                    <div class="w-full">
+                        <div class="widget-stat pb-0 card bg-info">
+                            <div class="card-body p-0 ">
+                                <div class="mt-4 overflow-hidden flex gap-4">
+                                    <div class="flex-none flex-end text-white ">
+                                        <p class="mb-1">Absence</p>
+                                        <h3 class="text-white fs-2hx">14</h3>
+                                    </div>
+                                    <span class="w-full">
+                                        <canvas class="clean-line-chartjs relative" data-fill="true" data-color="white"
+                                            data-label="Absence" height="38" width="100%"></canvas>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="widget-stat pb-0 card bg-primary">
+                            <div class="card-body p-0 ">
+                                <div class="mt-4 overflow-hidden flex gap-4">
+                                    <div class="pt-2 flex-none text-white ">
+                                        <p class="mb-1">Attendance</p>
+                                        <h3 class="text-white mb-0 pb-0 fs-2hx">469</h3>
+                                    </div>
+                                    <span class="w-full ">
+                                        <canvas class="clean-bar-chartjs relative" data-color="white" data-label="Attendance"
+                                            height="40" width="100%"></canvas>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full">
+                        <div class="widget-stat pb-0 card bg-success">
+                            <div class="card-body p-0 ">
+                                <div class="mt-4 overflow-hidden flex gap-4">
+                                    <div class="pt-2 flex-none text-white ">
+                                        <p class="mb-1">Working hours</p>
+                                        <h3 class="text-white mb-0 pb-0 fs-2hx">2,698</h3>
+                                    </div>
+                                    <span class="w-full ">
+                                        <canvas class="clean-bar-chartjs relative" data-color="white" data-label="Working hours"
+                                            height="40" width="100%"></canvas>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="col-lg-12">
+                    
+                    <div class="card">
+                        <div class="card-header pt-7">
+                            <h2>Attendance Log</h2>
+                            <input type="date" class="datepicker form-control form-control-solid py-1 w-200px" />
+                        </div>
+                            
+                        <div class="card-body">
+                            <!--end grid-->
+                            <div class="overflow-x-auto">
+                                <table class="w-full whitespace-nowrap table table-striped">
+                                    <thead class="ltr:text-left rtl:text-right bg-slate-100 text-slate-500 dark:text-zink-200 dark:bg-zink-600">
+                                        <tr class="*:px-3.5 *:py-2.5 *:font-semibold *:border-b *:border-slate-200 *:dark:border-zink-500">
+                                            <th class="min-w-125px">Employee Name</th>
+                                            <th>01</th>
+                                            <th>02</th>
+                                            <th>03</th>
+                                            <th>04</th>
+                                            <th>05</th>
+                                            <th class="active">06</th>
+                                            <th>07</th>
+                                            <th>08</th>
+                                            <th>09</th>
+                                            <th>10</th>
+                                            <th>11</th>
+                                            <th>12</th>
+                                            <th>13</th>
+                                            <th>14</th>
+                                            <th>15</th>
+                                            <th>16</th>
+                                            <th>17</th>
+                                            <th>18</th>
+                                            <th>19</th>
+                                            <th>20</th>
+                                            <th>21</th>
+                                            <th>22</th>
+                                            <th>23</th>
+                                            <th>24</th>
+                                            <th>25</th>
+                                            <th>26</th>
+                                            <th>27</th>
+                                            <th>28</th>
+                                            <th>29</th>
+                                            <th>30</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Adam Smith</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Haidy Johnson</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Hana Torres</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Jose Adam</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Juliette Fecteau</a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Jonas Frederiksen</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Kim Broberg</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Nancy Reynolds</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Thomas Hatfield</a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                        <tr class="*:px-3.5 *:py-2.5 *:border-y *:border-slate-200 *:dark:border-zink-500">
+                                            <td><a href="#!" class="transition-all duration-200 ease-linear">Holly Kavanaugh</a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x text-red-500 size-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></td>
+                                            <td><a href="#!" data-modal-target="addOrderModal" class="text-green-500 transition-all duration-200 ease-linear hover:text-green-600"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check size-4"><path d="M20 6 9 17l-5-5"></path></svg></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi hideit">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="form-control py-2">
+                <i class='cursor-pointer bx bx-message-square-x fs-1 mt-4 mx-8 position-absolute right-0 toggle_chat top-25' ></i>
+            </div>
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chatapi-windows ">
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+
+    
+    <!--begin::Modal - New Target-->
+    <div id="load-modal" class="load_html_file" data-path="/rtl/includes/modals/calendar-modal.html"></div>
+    <!--end::Modal - New Target-->
+
+        
+
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/pace/pace.min.js"></script>
+    <script src="/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets/plugins/viewport/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <script src="/assets/plugins/calendar/moment.min.js"></script>
+    <script src="/assets/plugins/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="/assets/plugins/chartjs-chart/Chart.min.js"></script>
+    <script src="/assets/js/chart-chartjs.js"></script>
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="/assets/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+</html>

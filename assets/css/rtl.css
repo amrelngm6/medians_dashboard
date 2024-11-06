@@ -1,0 +1,133 @@
+.rtl .ms-3 {
+    margin-right: .75rem !important;
+}
+.rtl .me-3 {
+    margin-left: .75rem !important;
+}
+.rtl .me-2 {
+    margin-left: .5rem !important;
+}
+.rtl .ms-2 {
+    margin-right: .5rem !important;
+}
+.rtl #main-menu-wrapper .menusection{
+    padding-left: 0;
+    padding-right: 24px;
+}
+.rtl #main-menu-wrapper li .sub-menu a
+{
+    padding-right: 55px;
+    padding-left: 0;
+}
+.rtl .designer-info {
+    padding-left: 0;
+    padding-right: 60px;
+}
+.rtl .start-0 {
+    left: auto !important;
+    right: 0 !important;
+}
+.rtl .right-0 {
+    right: auto;
+    left: 0;
+}
+.rtl .me-7 {
+    margin-right: 0 !important;
+    margin-left: 1.75rem !important;
+}
+.rtl .me-6 {
+    margin-right: 0 !important;
+    margin-left: 1.5rem !important;
+}
+.rtl .me-5 {
+    margin-right: 0 !important;
+    margin-left: 1.25rem !important;
+}
+.rtl .pe-8 {
+    padding-right: 0 !important;
+    padding-left: 2rem !important;
+}
+.rtl .ml-4 {
+    margin-right: 1.5rem !important;
+    margin-left: 0 !important;
+}
+.rtl .ms-5 {
+    margin-left: 1.25rem !important;
+    margin-right: 1.25rem !important;
+}
+.rtl .me-4 {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+}
+.rtl .mr-10 {
+    margin-left: 10px !important;
+}
+
+
+.rtl .timeline .timeline-line
+{
+    left: auto;
+    right: 0;
+}
+.rtl .timeline .timeline-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+.rtl .text-start,
+.rtl .dataTables_wrapper thead th
+{
+    text-align: right !important;
+}
+.rtl .ps-12 {
+    padding-right: 3rem !important;
+    padding-left: 0 !important;
+}
+.rtl .form-check-custom .form-check-label {
+    margin-right: .55rem;
+}
+.ltr {
+    direction: ltr;
+}
+.rtl .list-group
+{
+    padding-right: 0;
+}
+.rtl .accordion-button {
+    text-align: right;
+}
+.rtl .close,
+.rtl .pull-right
+{
+    float: left !important;
+}
+.rtl .pull-left,
+.rtl .page-topbar .logo-area
+{
+    float: right !important;
+}
+.rtl .page-sidebar.chat_shift .wraplist li:hover .sub-menu, .rtl .page-sidebar.collapseit .wraplist li:hover .sub-menu
+{
+    left: auto;
+    right: 60px;
+}
+.rtl .page-sidebar.chat_shift #main-menu-wrapper .wraplist li:hover .sub-menu .sub-menu, .rtl .page-sidebar.collapseit #main-menu-wrapper .wraplist li .sub-menu li:hover .sub-menu
+{
+    display: block;
+}
+.rtl .page-topbar .quick-area .info-menu li .dropdown-menu
+{
+    right: auto;
+    left: 0;
+}
+.rtl .page-topbar .quick-area .info-menu li.spec .dropdown-menu::after
+{
+    display: none;
+}
+.rtl .page-topbar .quick-area .info-menu li.spec .dropdown-menu:before
+{
+    right: 90%;
+}
+.rtl .page-topbar .dropdown-menu:after, .page-topbar .dropdown-menu:before {
+    left: 40px;
+    right: auto;
+}

@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- 
+        * @Package:  Medians Dashboard
+        * @Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medians Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144-precomposed.png">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <link href="/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/rtl.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="rtl ">
+    <!-- START TOPBAR -->
+    <div id="load-header" class="load_html_file" data-path="/rtl/includes/topbar.html"></div>
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+        <div id="load-sidebar" class="load_html_file" data-path="/rtl/includes/sidebar.html"></div>
+        <!--  SIDEBAR - END -->
+
+        <!-- START CONTENT -->
+        <section id="main-content" class=" " >
+            <div class="wrapper main-wrapper row" style=''>
+
+                <div class='col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title">All Projects ( Grid view ) </h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <!-- MAIN CONTENT AREA STARTS -->
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header align-items-center  gap-2 gap-md-5 w-full flex px-4">
+                            <div class="card-title">
+                                <input type="date" class="datepicker form-control form-control-solid py-1 w-200px" />
+                            </div>
+                            <a class="btn btn-md btn-primary me-2 open-modal" data-modal="#new-project-modal">
+                                New Project </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div
+                                                class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-primary me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">E-Commerce Website</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Sep 15, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto"> 
+                                        <div x-data="{open: true}"  class="d-flex align-items-center relative">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-grey star"></i>
+                                            </div>
+                                            <div class="show-child"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Barry Walter" data-bs-original-title="Barry Walter"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-3.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Alan Warden" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-1.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Perry Matthew" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
+                                            </div>
+                                            <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_view_users">
+                                                <span class="symbol-label bg-dark text-gray-300 fs-8 fw-bold">+1</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">43 / 50 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 85%; "
+                                        role="progressbar">
+                                        <span class="sr-only">85% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-dark me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">Server Maintenance</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Sep 25, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-warning star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Alan Warden" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-1.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Barry Walter" data-bs-original-title="Barry Walter"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">21 / 30 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 70%; "
+                                        role="progressbar">
+                                        <span class="sr-only">70% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div
+                                                class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-success me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">Social Media Marketing</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Oct 05, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-warning star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Alan Warden" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Perry Matthew" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">10 / 25 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 40%; "
+                                        role="progressbar">
+                                        <span class="sr-only">40% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-info me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">Flutter Mobile APP</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Oct 15, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-grey star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Barry Walter" data-bs-original-title="Barry Walter"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-3.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-1.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Alan Warden" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Perry Matthew" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
+                                            </div>
+                                            <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_view_users">
+                                                <span class="symbol-label bg-dark text-gray-300 fs-8 fw-bold">+2</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">31 / 50 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 26%; "
+                                        role="progressbar">
+                                        <span class="sr-only">62% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div
+                                                class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-primary me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">Web Design</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Oct 15, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-grey star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-1.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Barry Walter" data-bs-original-title="Barry Walter"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">26 / 50 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 55%; "
+                                        role="progressbar">
+                                        <span class="sr-only">55% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div
+                                                class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-warning me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">Cloud Computing</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Oct 25, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-warning star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-1.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Perry Matthew" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">8 / 20 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 45%; "
+                                        role="progressbar">
+                                        <span class="sr-only">45% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div
+                                                class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-primary me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">E-Commerce Website</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Nov 01, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-warning star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Barry Walter" data-bs-original-title="Barry Walter"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-3.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Alan Warden" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-1.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Perry Matthew" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
+                                            </div>
+                                            <a href="#" class="symbol symbol-35px symbol-circle" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_view_users">
+                                                <span class="symbol-label bg-dark text-gray-300 fs-8 fw-bold">+1</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">43 / 50 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 85%; "
+                                        role="progressbar">
+                                        <span class="sr-only">85% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-dark me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">Server Maintenance</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Oct 01, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-grey star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Alan Warden" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Michael Eberon" data-bs-original-title="Michael Eberon"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-1.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Barry Walter" data-bs-original-title="Barry Walter"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-3.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">21 / 30 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 70%; "
+                                        role="progressbar">
+                                        <span class="sr-only">70% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div class="card">
+                        <div class="card-body px-0">
+                            <div class="w-full">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-sm-flex align-items-center">
+                                            <div
+                                                class="avatar mb-2 p-2  mb-sm-0 avatar-md rounded-circle bg-success me-2">
+                                            </div>
+                                            <div class="ms-1">
+                                                <h6 class="mb-1"> <a
+                                                        href="/rtl/projects/project.html"
+                                                        class="float-start">Social Media Marketing</a> <span
+                                                        class="text-muted bg-light fs-11 mx-2">opened Oct 10, 2024</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="d-flex align-items-center">
+                                            <div class="stars-main me-3">
+                                                <i class="fa fa-star text-grey star"></i>
+                                            </div>
+                                            <div class="show-child relative"> 
+                                                <a href="#" class="option-dots fs-3" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"><i
+                                                    class='bx bx-dots-vertical-rounded'></i></a>
+                                                <div class="show-on-hover dropdown-menu dropdown-menu-start">
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-edit me-2"></i>
+                                                        Edit</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-share me-2"></i>
+                                                        Share</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-download me-2"></i>
+                                                        Clone</a>
+                                                    <a class="dropdown-item" href="#"><i class="fe fe-trash me-2"></i>
+                                                        Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" mt-10">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <p class="m-0 mb-2">Members</p>
+                                        <div class="symbol-group symbol-hover flex-nowrap flex">
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Susan Redwood" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-primary text-inverse-primary fw-bold">S</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Alan Warden" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-warning text-inverse-warning fw-bold">A</span>
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                aria-label="Melody Macy" data-bs-original-title="Melody Macy"
+                                                data-kt-initialized="1">
+                                                <img alt="Pic" src="/data/profile/avatar-2.png">
+                                            </div>
+                                            <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Perry Matthew" data-kt-initialized="1">
+                                                <span
+                                                    class="symbol-label bg-danger text-inverse-danger fw-bold">P</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <p class="mb-0">
+                                            <span class="text-muted d-block">Due Date</span>
+                                            <span class="text-danger">11 Nov 21</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-10 flex gap-4">
+                                <h5 class="w-full">Progress</h5>
+                                <span class="pt-1 block flex-none badge badge-danger light">10 / 25 Tasks</span>
+                            </div>
+                            <div class="mt-3">
+                                <div class="mb-0 progress default-progress h-4px">
+                                    <div class="progress-bar bg-gradient1 progress-animated" style="width: 40%; "
+                                        role="progressbar">
+                                        <span class="sr-only">40% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="text-center pb-20 pt-10">
+                    <a class="btn btn-md btn-primary w-200px  mx-auto open-modal" data-modal="#form-modal">
+                        Load more </a>
+                </div>
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi hideit">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="form-control py-2">
+                <i class='cursor-pointer bx bx-message-square-x fs-1 mt-4 mx-8 position-absolute right-0 toggle_chat top-25' ></i>
+            </div>
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chatapi-windows ">
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+
+    <!--begin::Modal - New Target-->
+    <div id="load-modal" class="load_html_file" data-path="/rtl/includes/modals/new-project-modal.html"></div>
+    <!--end::Modal - New Target-->
+
+        
+
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/pace/pace.min.js"></script>
+    <script src="/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets/plugins/viewport/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <script src="/assets/plugins/calendar/moment.min.js"></script>
+    <script src="/assets/plugins/daterangepicker/daterangepicker.min.js"></script>
+    
+    <script src="/assets/plugins/calendar/moment.min.js"></script>
+    <script src="/assets/plugins/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="/assets/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+</html>

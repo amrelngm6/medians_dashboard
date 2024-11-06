@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        * @Package:  Medians Dashboard
+        * @Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medians Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144-precomposed.png">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/fonts/webfont/cryptocoins.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <link href="/assets/plugins/datatables/css/dataTables.tableTools.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+
+</head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class=" ">
+    <!-- START TOPBAR -->
+    <div id="load-header" class="load_html_file" data-path="/ltr/includes/topbar.html"></div>
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+        <div id="load-sidebar" class="load_html_file" data-path="/ltr/includes/sidebar.html"></div>
+        <!--  SIDEBAR - END -->
+
+        <!-- START CONTENT -->
+        <section id="main-content" class=" overflow-x-hidden">
+            <div class="wrapper main-wrapper row" style=''>
+
+                <div class='col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title">All Products list </h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/index.html"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">E-Commerce</a>
+                                </li>
+                                <li class="active">
+                                    <strong>Add product</strong>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <!-- MAIN CONTENT AREA STARTS -->
+
+                <div class="col-md-12">
+                    
+                    <div class="card">
+                        <div class="card-header align-items-center  gap-2 gap-md-5 w-full flex">
+                            <div class="card-title">
+                                <div class="d-flex align-items-center position-relative my-1">
+                                    <input type="date" class="datepicker form-control form-control-solid py-1 w-200px" />
+                                </div>
+                            </div>
+                            
+                            <a class="btn btn-md btn-primary  " href="/ltr/ecommerce/new.html">
+                                New Product </a>
+                        </div>
+
+                        <div class="card-body">
+
+                            <div class="table" data-pattern="priority-columns">
+                                <table
+                                    class="w-full whitespace-nowrap table datatable table-small-font no-mb table-bordered table-striped"
+                                    id="productTable">
+                                    <thead class="text-start bg-slate-100 dark:bg-zink-600">
+                                        <tr>
+                                            <th class=" product_code" data-sort="product_code">Product Code</th>
+                                            <th class="text-start product_name" data-sort="product_name">Product Name
+                                            </th>
+                                            <th class="text-start category" data-sort="category">Category</th>
+                                            <th class=" price" data-sort="price">Price</th>
+                                            <th class=" stock" data-sort="stock">Stock</th>
+                                            <th class=" revenue" data-sort="revenue">Revenue</th>
+                                            <th class=" status" data-sort="status">Status</th>
+                                            <th class="action">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="list">
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100083</a>
+                                            </td>
+                                            <td class=" product_name">
+                                                <a href="/ltr/ecommerce/edit.html" class="flex items-center gap-2">
+                                                    <img src="/data/products/6.jpg" alt="Product images"
+                                                        class="h-40px w-40px">
+                                                    <h6 class="pt-4 product_name">BBow polka-dot </h6>
+                                                </a>
+                                            </td>
+                                            <td class=" ">
+                                                <span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Fashion</span>
+                                            </td>
+                                            <td class=" price">$79.99</td>
+                                            <td class=" stock">500</td>
+                                            <td class=" revenue">$24,365</td>
+                                            <td class=" status">
+                                                <span
+                                                    class="badge round-danger px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-orange-100 border-transparent text-orange-500 dark:bg-orange-500/20 dark:border-transparent">Unpublish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center size-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal size-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!">
+                                                                <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100071</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/2.png" alt="Product images"
+                                                        class="h-40px w-40px">
+                                                    <h6 class="product_name">Z Product 360</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Fashion</span>
+                                            </td>
+                                            <td class=" price">$79.99</td>
+                                            <td class=" stock">500</td>
+                                            <td class=" revenue">$24,365</td>
+                                            <td class=" status"><span
+                                                    class="badge round-danger px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-orange-100 border-transparent text-orange-500 dark:bg-orange-500/20 dark:border-transparent">Unpublish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100084</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/3.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Mesh Ergonomic Black Chair</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Furniture</span>
+                                            </td>
+                                            <td class=" price">$214.47</td>
+                                            <td class=" stock">400</td>
+                                            <td class=" revenue">$1,24,365</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-green-100 border-transparent text-green-500 dark:bg-green-500/20 dark:border-transparent">Publish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!">
+                                                                <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100095</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/4.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Fastcolors Typography Men</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Fashion</span>
+                                            </td>
+                                            <td class=" price">$119.12</td>
+                                            <td class=" stock">600</td>
+                                            <td class=" revenue">$80,321</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-red-100 border-transparent text-red-500 dark:bg-red-500/20 dark:border-transparent">Inactive</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100086</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/1.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Techel Black Bluetooth Soundbar</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Electronics</span>
+                                            </td>
+                                            <td class=" price">$452.99</td>
+                                            <td class=" stock">300</td>
+                                            <td class=" revenue">$49,234</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-green-100 border-transparent text-green-500 dark:bg-green-500/20 dark:border-transparent">Publish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100087</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/5.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Bovet Fleurier AIFSQ029</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Home
+                                                    Decor</span></td>
+                                            <td class=" price">$119.99</td>
+                                            <td class=" stock">240</td>
+                                            <td class=" revenue">$20,784</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-green-100 border-transparent text-green-500 dark:bg-green-500/20 dark:border-transparent">Publish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100081</a>
+                                            </td>
+                                            <td class=" product_name">
+                                                <a href="/ltr/ecommerce/edit.html" class="flex items-center gap-2">
+                                                    <img src="/data/products/6.jpg" alt="Product images"
+                                                        class="h-40px w-40px">
+                                                    <h6 class="pt-4 product_name">Printed T-shirt With Picture</h6>
+                                                </a>
+                                            </td>
+                                            <td class=" ">
+                                                <span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Fashion</span>
+                                            </td>
+                                            <td class=" price">$79.99</td>
+                                            <td class=" stock">500</td>
+                                            <td class=" revenue">$24,365</td>
+                                            <td class=" status">
+                                                <span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-orange-100 border-transparent text-orange-500 dark:bg-orange-500/20 dark:border-transparent">Publish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center size-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal size-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!">
+                                                                <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100082</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/2.png" alt="Product images"
+                                                        class="h-40px w-40px">
+                                                    <h6 class="product_name">Smartest Printed T-shirt</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Fashion</span>
+                                            </td>
+                                            <td class=" price">$79.99</td>
+                                            <td class=" stock">500</td>
+                                            <td class=" revenue">$24,365</td>
+                                            <td class=" status"><span
+                                                    class="badge round-danger px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-orange-100 border-transparent text-orange-500 dark:bg-orange-500/20 dark:border-transparent">Unpublish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100072</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/3.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Mesh Ergonomic Black Chair</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Furniture</span>
+                                            </td>
+                                            <td class=" price">$214.47</td>
+                                            <td class=" stock">400</td>
+                                            <td class=" revenue">$1,24,365</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-green-100 border-transparent text-green-500 dark:bg-green-500/20 dark:border-transparent">Publish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html">
+                                                                <span class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!">
+                                                                <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100073</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/4.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Fastcolors Typography Men</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Fashion</span>
+                                            </td>
+                                            <td class=" price">$119.12</td>
+                                            <td class=" stock">600</td>
+                                            <td class=" revenue">$80,321</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-red-100 border-transparent text-red-500 dark:bg-red-500/20 dark:border-transparent">Inactive</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100089</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/1.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Bonorum et Malorum</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Electronics</span>
+                                            </td>
+                                            <td class=" price">$84.99</td>
+                                            <td class=" stock">110</td>
+                                            <td class=" revenue">$15,493</td>
+                                            <td class=" status"><span
+                                                    class="badge round-danger px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-orange-100 border-transparent text-orange-500 dark:bg-orange-500/20 dark:border-transparent">Unpublish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative  show-child p-0">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        data-lucide="more-horizontal"
+                                                        class="lucide lucide-more-horizontal w-3 h-3">
+                                                        <circle cx="12" cy="12" r="1"></circle>
+                                                        <circle cx="19" cy="12" r="1"></circle>
+                                                        <circle cx="5" cy="12" r="1"></circle>
+                                                    </svg>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100074</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/1.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Fox sake withe</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Electronics</span>
+                                            </td>
+                                            <td class=" price">$452.99</td>
+                                            <td class=" stock">300</td>
+                                            <td class=" revenue">$49,234</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-green-100 border-transparent text-green-500 dark:bg-green-500/20 dark:border-transparent">Publish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100075</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/5.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Bovet Fleurier AIFSQ029</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Home
+                                                    Decor</span></td>
+                                            <td class=" price">$119.99</td>
+                                            <td class=" stock">240</td>
+                                            <td class=" revenue">$20,784</td>
+                                            <td class=" status"><span
+                                                    class="badge round-success px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-green-100 border-transparent text-green-500 dark:bg-green-500/20 dark:border-transparent">Publish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1" data-bs-toggle="dropdown"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">
+                                                <a href="#!"
+                                                    class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600"><a
+                                                        href="#!"
+                                                        class="transition-all duration-150 ease-linear product_code text-custom-500 hover:text-custom-600">#P-232100099</a></a>
+                                            </td>
+                                            <td class=" product_name"><a href="/ltr/ecommerce/edit.html"
+                                                    class="flex items-center gap-2">
+                                                    <img src="/data/products/1.png" alt="Product images"
+                                                        class="h-30px w-30px rounded-circle">
+                                                    <h6 class="product_name">Iron 1000 W Dry</h6>
+                                                </a></td>
+                                            <td class=" category"><span
+                                                    class="category px-2.5 py-0.5 text-xs inline-block font-medium rounded border bg-slate-100 border-slate-200 text-slate-500 dark:bg-slate-500/20 dark:border-slate-500/20 dark:text-zink-200">Electronics</span>
+                                            </td>
+                                            <td class=" price">$84.99</td>
+                                            <td class=" stock">110</td>
+                                            <td class=" revenue">$15,493</td>
+                                            <td class=" status"><span
+                                                    class="badge round-danger px-2.5 py-0.5 inline-block text-xs font-medium rounded border bg-orange-100 border-transparent text-orange-500 dark:bg-orange-500/20 dark:border-transparent">Unpublish</span>
+                                            </td>
+                                            <td class=" action">
+                                                <div class="relative show-child">
+                                                    <button
+                                                        class="flex items-center justify-center w-[30px] h-[30px]  p-0 text-slate-500 btn bg-slate-100 hover:text-white hover:bg-slate-600 focus:text-white focus:bg-slate-600 focus:ring focus:ring-slate-100 active:text-white active:bg-slate-600 active:ring active:ring-slate-100 dark:bg-slate-500/20 dark:text-slate-400 dark:hover:bg-slate-500 dark:hover:text-white dark:focus:bg-slate-500 dark:focus:text-white dark:active:bg-slate-500 dark:active:text-white dark:ring-slate-400/20"
+                                                        id="productAction1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            data-lucide="more-horizontal"
+                                                            class="lucide lucide-more-horizontal w-3 h-3">
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg></button>
+                                                    <ul class="show-on-hover absolute   z-50  py-2 mt-0 text-start list-none bg-white rounded-md shadow-md dropdown-menu min-w-[10rem] dark:bg-zink-600"
+                                                        aria-labelledby="productAction1">
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Overview</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="/ltr/ecommerce/edit.html"> <span
+                                                                    class="align-middle">Edit</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a 
+                                                                class="delete-item block px-4 py-1.5 text-base transition-all duration-200 ease-linear text-slate-600 "
+                                                                href="#!"> <span class="align-middle">Delete</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi hideit">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="form-control py-2">
+                <i class='cursor-pointer bx bx-message-square-x fs-1 mt-4 mx-8 position-absolute right-0 toggle_chat top-25' ></i>
+            </div>
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chatapi-windows ">
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/pace/pace.min.js"></script>
+    <script src="/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets/plugins/viewport/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <script src="/assets/plugins/sweetalert/sweetalert2-11.js"></script>
+    <script src="/assets/plugins/calendar/moment.min.js"></script>
+    <script src="/assets/plugins/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="/assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/plugins/datatables/js/dataTables.bootstrap.js"></script>
+    <script src="/assets/plugins/datatables/js/dataTables.responsive.min.js"></script>
+
+    <script src="/assets/plugins/chartjs-chart/Chart.min.js"></script>
+    <script src="/assets/js/chart-chartjs.js"></script>
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="/assets/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+</html>
