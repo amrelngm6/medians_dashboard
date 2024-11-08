@@ -6146,6 +6146,7 @@ a.cke_button_off:hover, .cke_hc a.cke_button_off:focus, .cke_hc a.cke_button_off
     width: 100%;
     cursor: pointer;
     padding-top: 10px;
+    text-align: center;
   }
   
       
